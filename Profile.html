@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Profile Page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/RE_logo.ico">
+	<link rel="apple-touch-icon" href="images/Favicon-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/Favicon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/Favicon-114x114.png">
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Passion+One:400,700,900' rel='stylesheet' type='text/css'>
+	
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+
+	<!-- JAVASCRIPT-->
+    <script src="js/IngredientScript.js"></script>
+     <script src="js/Folders.js"></script>
+  
+</head>
+<body onload="StartIngredients();">
+
+	<div class="container">
+		<div class="sixteen columns">
+        	<div class="logo">
+			<a href="index2.html"><img src="images/Logo2.png" alt="RecipeMe Logo" title="RecipeMe Logo"></a>
+            </div>
+            <div class="TopRightLogin">
+			<p><a href="#">Shopping List</a>  |  <a href="#">Profile</a>  |  <a href="Login.html">Logout</a></p>
+            </div>
+            <div id="nav">
+            	<ul>
+                	<li><a href="Browse2.html">Browse</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Tips &amp; Tricks</a></li>
+                </ul>
+            </div>
+           <form>
+               <input type="search" name="googlesearch" value="Search">
+                 </form>
+ 
+		</div>
+
+		<div class="six columns">
+        <div id="ProfileColumn">
+			<img src="images/ProfilePic.jpg" class="ProfilePic" alt="Profile Picture">
+			<p>Brian Bennett<br>
+            	3 Saved Recipes<br>
+                1 Created Recipe</p>
+                <img src="images/FoodType.png" class="FoodType" alt="Food Type">
+                <table>
+                <form>
+				<tr><td>Cook Time</td><td><input type="text" value="10-20 Min"></td></tr>
+                <tr><td>Skill Level</td><td><input type="text" value="Expert"></td></tr>
+                <tr><td>Ingredients</td><td><input type="text" value="10-20"></td></tr>
+                <tr><td>Health Conscious</td><td><input type="text" value="Never"></td></tr>
+                <tr><td>Breakfast</td><td><input type="text" value="Often"></td></tr>
+                <tr><td>Lunch</td><td><input type="text" value="Occasionally"></td></tr>
+                <tr><td>Dinner</td><td><input type="text" value="Often"></td></tr>
+                <tr><td>Dessert</td><td><input type="text" value="Never"></td></tr>
+            	</form>
+                </table>
+		</div>
+        </div>
+
+		<div class="nine columns">
+        	<div class="ButtonBig"><a href="BakedPasta.html">Recipe Me!</a></div>
+        	
+        	<div class="ProfileRecipeNav">	
+            	<a href="#" onclick="AppearSuggested();">Suggested (10)</a>
+            	<a href="#" onclick="AppearSaved();">Saved (3)</a>
+                <a href="#" onclick="AppearCreated();">Created (1)</a>
+                <a href="#" onclick="AppearAll();">All (14)</a></div>
+        	<div id="Section1" class="scroll">
+            <img src="images/TriTip.jpg" alt="Tri Tip" title="Tri Tip" class="ImgResize100">
+            <h3>Tri Tip</h3><img src="images/FoodType_Amer.png"  class="ImgResize10" alt="American"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>This sweat and savory marinade infuses the complex flavors of aged scotch with the sweetness of a nice hickory smoked flavoring that will tantalize your palate.</p>
+            <hr>
+            <img src="images/BackedPasta.jpg" alt="Baked Pasta" title="Baked Pasta"  class="ImgResize100">
+            <h3>Baked Pasta</h3><img src="images/FoodType_Ital.png"  class="ImgResize10" alt="Italian"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>Go Italian with this delicious baked penne and roasted vegetable pasta. This dish is very easy. Just chop, mix, and bake! This pasta is great for vegetarians and it feeds a lot of people. </p>
+            <hr>
+            <a href="AhiTuna.html"><img src="images/Tuna.jpg" alt="Ahi Tuna" title="Ahi Tuna"  class="ImgResize100"></a>
+            <a href="AhiTuna.html"><h3>Ahi Tuna</h3></a><img src="images/FoodType_Asian.png"  class="ImgResize10" alt="Asian"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>Take a trip to the orient with this traditional Japanese dish.
+A seared ahi tuna rolled in black and white sesame seeds drizzled with a wasabi butter soy sauce. Simple yet elegant and nutritious, incorporating the rich flavors of ahi tuna and satisfying sauce you are bound to impress.  Consider boasting your culinary prowess with a homemade soy sauce reduction with a creamy wasabi sauce.</p>
+            <hr>
+            <img src="images/Pork.jpg" alt="Pork" title="Pork"  class="ImgResize100">
+            <h3>Pork</h3><img src="images/FoodType_Amer.png"  class="ImgResize10" alt="American"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nulla, sollicitudin nec tempor sit amet, vehicula vel magna. Duis in porttitor metus. Nunc auctor justo id nunc cursus, non molestie libero ultricies. Proin pulvinar nisi sed velit tincidunt, at pharetra leo facilisis. Quisque tempus mauris elit, ut sagittis sapien mollis et.</p>
+            </div>
+            <div id="Section2" class="scroll_DisplayNone">
+			<img src="images/Ceviche.jpg" alt="Ceviche" title="Ceviche"  class="ImgResize100">
+            <h3>Ceviche</h3><img src="images/FoodType_Mex.png"  class="ImgResize10" alt="Mexican"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>A classic Peruvian dish that is great for tapas.  Enjoy a delicious snack on a warm summer day.</p>
+            <hr>
+            <img src="images/Margarita.jpg" alt="Margarita" title="Margarita"  class="ImgResize100">
+            <h3>Avocado Margarita</h3><img src="images/FoodType_Mex.png"  class="ImgResize10" alt="Mexican"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>A classic margarita with a fresh California twist.  This is a lime margarita with a blend of creamy avocado will surely "WOW" your guests.</p>
+            </div>
+            <div id="Section3" class="scroll_DisplayNone">
+			 <img src="images/Salmon.jpg" alt="Salmon" title="Salmon"  class="ImgResize100">
+            <h3>Lemon Salmon</h3><img src="images/FoodType_Amer.png"  class="ImgResize10" alt="American"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nulla, sollicitudin nec tempor sit amet, vehicula vel magna. Duis in porttitor metus. Nunc auctor justo id nunc cursus, non molestie libero ultricies. Proin pulvinar nisi sed velit tincidunt, at pharetra leo facilisis. Quisque tempus mauris elit, ut sagittis sapien mollis et</p>
+            </div>
+            <div id="Section4" class="scroll_DisplayNone">
+			 <img src="images/TriTip.jpg" alt="Tri Tip" title="Tri Tip"  class="ImgResize100">
+            <h3>Tri Tip</h3><img src="images/FoodType_Amer.png" width="10%" alt="American"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>This sweat and savory maranade infuses the complex flavors of aged scotch with the sweetness of a nice hickory smoked flavoring that will tantalize your palate.</p>
+            <hr>
+            <img src="images/BackedPasta.jpg" alt="Baked Pasta" title="Baked Pasta"  class="ImgResize100">
+            <h3>Baked Pasta</h3><img src="images/FoodType_Asian.png"  class="ImgResize10" alt="Asian"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nulla, sollicitudin nec tempor sit amet, vehicula vel magna. Duis in porttitor metus. Nunc auctor justo id nunc cursus, non molestie libero ultricies. Proin pulvinar nisi sed velit tincidunt, at pharetra leo facilisis. Quisque tempus mauris elit, ut sagittis sapien mollis et.</p>
+            <hr>
+            <img src="images/Ceviche.jpg" alt="Ceviche" title="Ceviche"  class="ImgResize100">
+            <h3>Ceviche</h3><img src="images/FoodType_Mex.png"  class="ImgResize10" alt="Mexican"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>A classic Peruvian dish that is great for tapas.  Enjoy a delicious snack on a warm summer day.</p>
+            <hr>
+            <img src="images/Margarita.jpg" alt="Margarita" title="Margarita"  class="ImgResize100">
+            <h3>Avocado Margarita</h3><img src="images/FoodType_Mex.png"  class="ImgResize10" alt="Mexican"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>A classic margarita with a fresh California twist.  This is a lime margarita with a blend of creamy avocado will surely "WOW" your guests.</p>
+            <hr>
+            <img src="images/Salmon.jpg" alt="Margarita" title="Margarita"  class="ImgResize100">
+            <h3>Lemon Salmon</h3><img src="images/FoodType_Amer.png"  class="ImgResize10" alt="American"><img src="images/Stars.png"  class="ImgResize30" alt="5 Stars">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu nulla, sollicitudin nec tempor sit amet, vehicula vel magna. Duis in porttitor metus. Nunc auctor justo id nunc cursus, non molestie libero ultricies. Proin pulvinar nisi sed velit tincidunt, at pharetra leo facilisis. Quisque tempus mauris elit, ut sagittis sapien mollis et.</p>
+            </div>
+           
+		</div>
+		
+
+		<div class="sixteen columns">
+			<div class="footer">
+            <img src="images/SocialMedia.png" class="ImgResize20" alt="Social Media Logo" title="Social Media Logo">
+            <p>ALL RIGHTS RESERVED Copyright 2013 RecipeMe.com</p>
+            </div>
+		</div>
+
+
+	</div><!-- container -->
+
+</body>
+</html>

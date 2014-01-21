@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Ahi Tuna</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/RE_logo.ico">
+	<link rel="apple-touch-icon" href="images/Favicon-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/Favicon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/Favicon-114x114.png">
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Passion+One:400,700,900' rel='stylesheet' type='text/css'>
+	
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+
+	<!-- JAVASCRIPT-->
+    <script src="js/IngredientScript.js"></script>
+     <script src="js/Folders.js"></script>
+  
+</head>
+<body onload="StartIngredients();">
+
+	<div class="container">
+		<div class="sixteen columns">
+        	<div class="logo">
+			<a href="index2.html"><img src="images/Logo2.png" alt="RecipeMe Logo" title="RecipeMe Logo"></a>
+            </div>
+            <div class="TopRightLogin">
+			<p><a href="#">Shopping List</a>  |  <a href="Profile.html">Profile</a>  |  <a href="Login.html">Logout</a></p>
+            </div>
+            <div id="nav">
+            	<ul>
+                	<li><a href="Browse2.html">Browse</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Tips &amp; Tricks</a></li>
+                </ul>
+            </div>
+           <form>
+              <input type="search" name="googlesearch" value="Search">
+                 </form>
+ 
+		</div>
+
+		<div class="nine columns">
+        	<img src="images/Tuna.jpg" class="ImgResize100" alt="Ahi Tuna" title="Ahi Tuna">
+        	<h3 class="h3Red">SEARED AHI TUNA</h3><img src="images/FoodType_Asian.png" class="ImgResize10" alt="Asian"><img src="images/Stars.png" class="ImgResize25" alt="5 Stars" title="5 Stars">
+        	<div class="RecipeNav">	<a href="#" onclick="AppearDescription();">Description</a>
+            	<a href="#" onclick="AppearDirection();">Direction</a>
+                <a href="#" onclick="AppearReviews();">Reviews</a></div>
+        	<div id="Section1" >
+            <p>Take a trip to the orient with this traditional Japanese dish.
+A seared ahi tuna rolled in black and white sesame seeds drizzled with a wasabi butter soy sauce. Simple yet elegant and nutritious, incorporating the rich flavors of ahi tuna and satisfying sauce you are bound to impress.  Consider boasting your culinary prowess with a homemade soy sauce reduction with a creamy wasabi sauce.</p>
+            </div>
+            <div id="Section2" class="DisplayNone">
+			<p>Place the balsamic vinegar, lemon juice, and garlic in a small saucepan over medium-low heat. Simmer until the mixture reduces by half. Turn off the heat and reserve until needed. This sauce does not have to be hot for service. The reduction will thicken slightly as it cools. <br><br>
+
+Slice the tuna fillet into 4 equal size rectangular steaks. In a small bowl, combine the salt, coriander, paprika, and cayenne pepper. Lay the tuna steaks out on a plate, and sprinkle the spice mixture evenly on all sides. <br><br>
+
+Evenly coat the tuna steaks with the freshly ground black pepper, and gently press it in, so that it adheres to the surface, being careful not to smash the flesh. <br><br>
+
+Place a thick-bottomed frying pan, or cast iron skillet over medium-high heat. Add the oil and swirl to coat the pan. When you see small wisps of smoke, add the tuna to the pan and sear the steaks for about 1 minute per side, or until desired doneness is reached. Remove to a cutting board. For presentation, cut each steak diagonally into 4-5 slices and fan on a plate. Serve with a small amount of sauce drizzled along side. Garnish with additional lemon if desired. <br><br>
+
+Note: Seared Ahi tuna is best cooked rare to achieve its wonderfully meaty flavor and buttery texture. Overcooking will make it dry and "fishier" tasting.</p>
+            </div>
+            <div id="Section3" class="DisplayNone">
+			<table class="ReviewTable">
+            	<tr>
+                <td>Paige Burington</td>
+                <td>I DID NOT LIKE IT VERY MUCH<br><img src="images/2Star.png" class="ImgResize25" alt="2 Stars" title="2 Stars"></td>
+                </tr>
+                <tr class="ReviewSection">
+                <td>&nbsp;</td>
+                <td>I thought that it turned out ok but I did not like that it was raw.</td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td>Emily White</td>
+                <td>SO EASY TO MAKE!<br><img src="images/Stars.png" class="ImgResize25" alt="5 Stars" title="5 Stars"></td>
+                </tr>
+                <tr class="ReviewSection">
+                <td>&nbsp;</td>
+                <td>This meal was easy and quick to make. My only complaint would be that the tuna can be pretty expensive.</td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td>Dylan Johns</td>
+                <td>TOO HARD...<br><img src="images/1Star.png" class="ImgResize25" alt="1 Star" title="1 Star"></td>
+                </tr>
+                <tr class="ReviewSection">
+                <td>&nbsp;</td>
+                <td>I over cooked the tuna and I followed the directions EXACTLY!  I don't know where I went wrong...</td>
+                </tr>
+            </table>
+            </div>
+           
+		</div>
+		
+		<div class="six columns offset-by-one">
+        <div id="IngredientsColumn">
+			<h3>INGREDIENTS</h3>
+			<form onload="StartIngredients();" class="Ingredients">
+            <div class="UpDownButton">
+	<input type="button" id="ServingPlus" onclick="ServingSize(true);" value="+"><br>
+    <input type="button" id="ServingMinus" onclick="ServingSize();" value="-">
+	Serving Size
+    <input type="text" id="ServingSizeOutput" size="2">
+    </div>
+    <br><input type="checkbox" name=list value="1"><input type="text" id="Food1Output" maxlength="4" size="2">Pounds of Ahi Tuna<br>
+    <input type="checkbox" name=list value="2"><input type="text" id="Food2Output" maxlength="4" size="2">Tbs of Salt<br>
+    <input type="checkbox" name=list value="3"><input type="text" id="Food3Output" maxlength="4" size="2">Tbs Paprika<br>
+    <input type="checkbox" name=list value="4"><input type="text" id="Food4Output" maxlength="4" size="2">Tbs Cayenne Pepper<br>
+    <input type="checkbox" name=list value="5"><input type="text" id="Food5Output" maxlength="4" size="2">Tbs Vegetable Oil<br>
+    <input type="checkbox" name=list value="6"><input type="text" id="Food6Output" maxlength="4" size="2">Lemon Wedges<br>
+    <input type="checkbox" name=list value="7"><input type="text" id="Food7Output" maxlength="4" size="2">Tbs of Black Pepper<br>
+    <input type=button value="Check All" onClick="this.value=check(this.form.list)"> <input type="button" value="Add To Shopping List">
+    
+</form>
+		</div>
+        </div>
+
+		<div class="sixteen columns">
+			<div class="footer">
+            <img src="images/SocialMedia.png" class="ImgResize20" alt="Social Media Logo" title="Social Media Logo">
+            <p>ALL RIGHTS RESERVED Copyright 2013 RecipeMe.com</p>
+            </div>
+		</div>
+
+
+	</div><!-- container -->
+
+</body>
+</html>

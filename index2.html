@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Recipe Me Homepage</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/RE_logo.ico">
+	<link rel="apple-touch-icon" href="images/Favicon-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/Favicon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/Favicon-114x114.png">
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Passion+One:400,700,900' rel='stylesheet' type='text/css'>
+	
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="sixteen columns">
+        	<div class="logo">
+			<a href="index2.html"><img src="images/Logo2.png" alt="RecipeMe Logo" title="RecipeMe Logo"></a>
+            </div>
+            <div class="TopRightLogin">
+			<p><a href="Login.html">Register  |  Login</a></p>
+            </div>
+            <div id="nav">
+            	<ul>
+                	<li><a href="Browse2.html">Browse</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Tips &amp; Tricks</a></li>
+                </ul>
+            </div>
+           <form>
+               <input type="search" name="googlesearch" value="Search">
+                 </form>
+		</div>
+        
+  <div class="sixteen columns">
+	<div class="Slideshow"> 
+    <div class="slides">
+	<img src="images/SS1.jpg" id="Pic1" style="display:none;" alt="Slideshow1">
+    <img src="images/SS2.jpg" id="Pic2" style="display:none;" alt="Slideshow2">
+    <img src="images/SS3.jpg" id="Pic3" alt="Slideshow3" >
+    </div>
+    <img src="images/InvisibleBlock.png"  id="Invisible" alt="Slideshow4"> 
+    </div>
+    
+    <script type="text/javascript"> 
+	
+				$( document ).ready(function() {
+					$('#Pic3').fadeIn(1500).delay(5000).fadeOut(1500);
+			    	$('#Pic2').delay(7000).fadeIn(1500).delay(5000).fadeOut(1500);
+			    	$('#Pic1').delay(15000).fadeIn(1500).delay(5000).fadeOut(1500);
+					});
+					
+			   setInterval(function() {
+			    $('#Pic3').fadeIn(1500).delay(5000).fadeOut(1500);
+			    $('#Pic2').delay(8000).fadeIn(1500).delay(5000).fadeOut(1500);
+			    $('#Pic1').delay(16000).fadeIn(1500).delay(5000).fadeOut(1500);
+			}, 24000);
+</script>
+ 
+		</div>
+
+		<div class="ten columns">
+			<h3>WHY RECIPE ME</h3>
+			<p>RecipeMe is a place where you can get personalized recipes.  Take our quick quiz to get recipes that work just for you! You won't have to ever worry about ingredients, skill level and everything else.  Our quiz will filter through the vast number of recipes out there to find the ones that interest you.  If you only like cooking dinners that only take 20 minutes with a skill level of beginner, we will find it for you!  If you can't decide what you want to make, just click the "RecipeMe" button and you will get a random recipe based on your preferences. </p>
+		</div>
+		
+		<div class="five columns offset-by-one" >
+			<h3>GET STARTED</h3>
+			<form class="Signup">
+            	First Name<input type="text">
+                Last Name <input type="text">
+                Email <input type="email">
+                Password <input type="text">
+            </form>
+           <div class="Button"><a href="Quiz.html">Submit</a></div>
+		</div>
+
+		<div class="sixteen columns">
+			<div class="footer">
+            <img src="images/SocialMedia.png" width="20%" alt="Social Media Logo" title="Social Media Logo">
+            <p>ALL RIGHTS RESERVED Copyright 2013 RecipeMe.com</p>
+            </div>
+		</div>
+
+
+	</div><!-- container -->
+
+</body>
+</html>

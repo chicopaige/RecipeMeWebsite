@@ -1,0 +1,451 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #FDFBE0;
+	font-size: 1em;
+}
+
+h2 {
+	font-family: 'Passion One', san serif;
+	color: #E32125;
+}
+
+h3 {
+	font-family: 'Passion One', san serif;
+	color: #F8B739;
+}
+
+h4 {
+	font-family: 'Passion One', san serif;
+	color: #E32125;
+	margin: 0px;
+}
+
+.h3Red {
+	color:#E32125;
+}
+
+a {
+	text-decoration:none;
+}
+
+.logo {
+	width: 15%;
+	position: absolute;
+	z-index: 2;
+	margin-left: -30px;
+}
+
+div {
+	margin: 0px;
+	padding: 0px;
+}
+
+.TopRightLogin {
+	float: right;
+}
+
+.LoginPg {
+	background-color: white;
+	padding: 10px;
+	margin-top: 70px;
+}
+
+/********** NAVIGATIONS*****/
+
+#nav { 
+	background-color: #15A4B4;
+	width: 100%;
+	height: 30px;
+	float: left;
+	z-index: 1;
+	position: relative;
+}
+
+#nav ul {
+	margin-left: 20%;
+}
+
+#nav li {
+	list-style: none;
+	float: left;
+	padding-right: 10%;
+	padding-top: .5%;
+	color: #FFFFCC;
+}
+
+#nav li a {
+	color:#FFFFCC;
+}
+
+.RecipeNav {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.RecipeNav a {
+	padding: 10px;
+	margin-right: 10px;
+	background-color: #15A4B4;
+	color: #FDFBE0;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.ProfileRecipeNav {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.ProfileRecipeNav a {
+	padding: 10px;
+	margin-right: 10px;
+	background-color: #15A4B4;
+	color: #FDFBE0;
+	border-radius: 10px 10px 0px 0px;
+}
+
+@media only screen and (max-width: 767px){
+	.ProfileRecipeNav a{
+		float:left;
+		margin-bottom: 10px;
+	}
+}
+
+ <!--CODE BELOW FROM: http://css-tricks.com/snippets/jquery/simple-jquery-accordion/-->
+.accordion {
+   	position: block;
+
+    dd {
+      padding: 10px;
+      border: 1px solid black;
+      border-bottom: 0; 
+      &:last-of-type {
+        border-bottom: 1px solid black; 
+      }
+      a {
+        display: block;
+        color: white;
+        font-weight: bold;
+      }
+   }
+  dd {
+     border-top: 0; 
+     font-size: 12px;
+     &:last-of-type {
+       border-top: 1px solid white;
+       position: relative;
+       top: -1px;
+     }
+  }
+}
+dt {
+	background-color: #15A4B4;
+	padding: 10px;
+}
+dt a:visited {
+	color: white;
+}
+
+ <!--CODE ABOVE FROM: http://css-tricks.com/snippets/jquery/simple-jquery-accordion/-->
+/********** FORMS*****/
+
+.sixteen.columns form {
+	z-index: 2;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 80%;	
+}
+
+input[type="text"], input[type="email"] {
+	margin-bottom: 5px;
+}
+	
+.Signup input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+		
+.Ingredients input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		/*width: 210px;*/
+		max-width: 100%;
+		/*display: block;*/
+		margin-bottom: 20px;
+		background: #fff; }
+
+/********** IMG RESPONSIVE*****/
+
+.sixteen.columns img {
+	width: 100%;
+}
+
+.sixteen.columns .footer img {
+	width: 10%;
+	margin-left: 45%;
+	padding-top: 20px;
+}
+
+/*.nine.columns img {
+	width: 100%;
+}
+
+/*.four.columns img {
+	width: 100%;
+}*/
+
+.ImgResize100 {
+	width: 100%;
+}
+
+.ImgResize80 {
+	width: 80%;
+}
+
+.ImgResize50 {
+	width: 50% !important;
+}
+
+.ImgResize30 {
+	width: 30%;
+}
+
+.ImgResize25 {
+	width: 25%;
+}
+
+.ImgResize20 {
+	width: 20%;
+}
+
+.ImgResize10 {
+	width: 10%;
+}
+
+/********** SLIDESHOW *****/
+
+.Slideshow {
+	position: relative;
+}
+
+.slides {
+	width:100%;
+	/*margin-top:70px;*/
+	position:absolute;
+}
+
+
+
+#IngredientsColumn {
+	background-color: #FFF;
+	margin-top: 30px;
+	padding: 20px 0 20px 20px;
+}
+	
+.scroll {
+	height: 600px;
+	overflow: scroll;
+	clear: both;
+}
+
+.scroll_DisplayNone {
+	height: 600px;
+	overflow: scroll;
+	clear: both;
+	display:none;
+}
+
+.ReviewSection {
+	border-bottom: solid 1px #999;
+	padding-bottom: 20px;
+}
+
+.ReviewTable td {
+	padding-right: 15px;
+	padding-bottom: 8px;
+}
+
+.BrowseTable {
+	clear:both;
+}
+
+.BrowseTable td {
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.BrowseTable img {
+	width:100%;
+}
+
+.BrowseButtons {
+	float: right;
+}
+
+.UpDownButton input[type="button"] {
+	margin: 0px;
+	padding: 5px;
+}
+
+.Quiz {
+	margin-left: 50px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.Quiz {
+	margin-left: 0px;
+}
+}
+
+@media only screen and (max-width: 767px){
+	.Quiz {
+	margin-left: 0px;
+	}
+}
+
+.CenterText {
+	text-align: center;
+}
+
+.Quiz .sixteen.columns {
+	margin-top: 70px;
+}
+
+.Quiz .four.columns {
+	background-color: white;
+	padding: 20px;
+}
+
+.QuizTable td {
+	text-align: center;
+}
+
+.QuizTable td p {
+	text-align: left;
+}
+
+.RecipeMeButton {
+	padding: 20px;
+	margin-left: 30%;
+	margin-top: 25px;
+	background-color:#15A4B4;
+	color: #FFFFCC;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#ProfileColumn {
+	background-color: #FFF;
+	margin-top: 30px;
+	padding: 20px 0 20px 20px;
+}
+
+#ProfileColumn p {
+	padding-left: 10px;
+}
+
+#ProfileColumn input[type="text"] {
+	margin-bottom: 10px;
+}
+
+.FoodType {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 80%;
+}
+
+.ProfilePic {
+	float: left;
+}
+
+.DisplayNone {
+	display: none;
+}
+
+
+.Button {
+	padding-bottom: 10px;
+}
+
+.Button a {
+	padding: 10px;
+	background-color: grey;
+	color: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.Button a:hover {
+	background-color: #F8B739;
+}
+
+.ButtonBig {
+	margin-top: 40px;
+	margin-left: 35%;
+	margin-bottom: 60px;
+}
+
+.ButtonBig a {
+	padding: 30px;
+	background-color: #E32125;
+	color: white;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 1.5em;
+}
+
+.ButtonBig a:hover {
+	background-color: #F8B739;
+}
+
+
+.QuizNextButton a {
+	float: right;
+	padding: 10px;
+	background-color: grey;
+	color: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.QuizNextButton a:hover {
+	background-color: #F8B739;
+}
+
+/********** FOOTER *****/
+
+.footer {
+	background-color: #15A4B4;
+	width: 100%;
+	height: 100px;
+}
+
+.footer p {
+	text-align: center;
+	color: #FFFFCC;
+	font-size:.75em;
+}

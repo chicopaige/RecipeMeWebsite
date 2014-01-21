@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Baked Pasta</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/RE_logo.ico">
+	<link rel="apple-touch-icon" href="images/Favicon-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/Favicon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/Favicon-114x114.png">
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Passion+One:400,700,900' rel='stylesheet' type='text/css'>
+	
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+
+	<!-- JAVASCRIPT-->
+    <script src="js/PastaIngredients.js"></script>
+     <script src="js/Folders.js"></script>
+  
+</head>
+<body onload="StartIngredients();">
+
+	<div class="container">
+		<div class="sixteen columns">
+        	<div class="logo">
+			<a href="index2.html"><img src="images/Logo2.png" alt="RecipeMe Logo" title="RecipeMe Logo"></a>
+            </div>
+            <div class="TopRightLogin">
+			<p><a href="#">Shopping List</a>  |  <a href="Profile.html">Profile</a>  |  <a href="Login.html">Logout</a></p>
+            </div>
+            <div id="nav">
+            	<ul>
+                	<li><a href="Browse2.html">Browse</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Tips &amp; Tricks</a></li>
+                </ul>
+            </div>
+           <form>
+              <input type="search" name="googlesearch" value="Search">
+                 </form>
+ 
+		</div>
+
+		<div class="nine columns">
+        	<img src="images/BackedPasta.jpg" width="100%" alt="Ahi Tuna" title="Ahi Tuna">
+        	<h3 class="h3Red">Baked Pasta</h3><img src="images/FoodType_Ital.png" width="10%"><img src="images/Stars.png" width="25%" alt="5 Stars" title="5 Stars">
+        	<div class="RecipeNav">	<a href="#" onclick="AppearDescription();">Description</a>
+            	<a href="#" onclick="AppearDirection();">Direction</a>
+                <a href="#" onclick="AppearReviews();">Reviews</a></div>
+        	<div id="Section1" >
+            <p>Go Italian with this delicious baked penne and roasted vegetable pasta. This dish is very easy. Just chop, mix, and bake! This pasta is great for vegetarians and it feeds a lot of people. </p>
+            </div>
+            <div id="Section2" style="display:none;">
+            <!--http://www.foodnetwork.com/recipes/giada-de-laurentiis/baked-penne-with-roasted-vegetables-recipe/index.html-->
+			<p>Preheat the oven to 450 degrees F.<br><br>
+
+On a baking sheet, toss the peppers, zucchini, squash, mushrooms, and onions with olive oil, 1/2 teaspoon salt, 1/2 teaspoon pepper, and dried herbs. Roast until tender, about 15 minutes.<br><br>
+
+Meanwhile, bring a large pot of salted water to a boil over high heat. Add the pasta and cook for about 6 minutes. Since you will be cooking the pasta a second time in the oven, you want to make sure the inside is still hard. Drain in a colander.<br><br>
+
+In a large bowl, toss the drained pasta with the roasted vegetables, marinara sauce, cheeses, peas, 1/2 teaspoon salt, and 1/2 teaspoon pepper. Using a wooden spoon, gently mix, until all the pasta is coated with the sauce and the ingredients are combined.<br><br>
+
+Pour the pasta into a greased 9 by 13-inch pan. Top with the remaining 1/3 cup Parmesan and butter pieces. Bake until top is golden and cheese melts, about 25 minutes.<br><br></p>
+            </div>
+            <div id="Section3" style="display:none;">
+			<table class="ReviewTable">
+            	<tr>
+                <td>Paige Burington</td>
+                <td>I DID NOT LIKE IT VERY MUCH<br><img src="images/2Star.png" width="25%" alt="2 Stars" title="2 Stars"></td>
+                </tr>
+                <tr class="ReviewSection">
+                <td>&nbsp;</td>
+                <td>I thought that it turned out ok but I did not like that it was raw.</td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td>Emily White</td>
+                <td>SO EASY TO MAKE!<br><img src="images/Stars.png" width="25%" alt="5 Stars" title="5 Stars"></td>
+                </tr>
+                <tr class="ReviewSection">
+                <td>&nbsp;</td>
+                <td>This meal was easy and quick to make. My only complaint would be that the tuna can be pretty expensive.</td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td>Dylan Johns</td>
+                <td>TOO HARD...<br><img src="images/1Star.png" width="25%" alt="1 Star" title="1 Star"></td>
+                </tr>
+                <tr class="ReviewSection">
+                <td>&nbsp;</td>
+                <td>I over cooked the tuna and I followed the directions EXACTLY!  I don't know where I went wrong...</td>
+                </tr>
+            </table>
+            </div>
+           
+		</div>
+		
+		<div class="six columns offset-by-one">
+        <div id="IngredientsColumn">
+			<h3>INGREDIENTS</h3>
+			<form onload="StartIngredients();" class="Ingredients">
+            <div class="UpDownButton">
+	<input type="button" id="ServingPlus" onclick="ServingSize(true);" value="+"><br>
+    <input type="button" id="ServingMinus" onclick="ServingSize();" value="-">
+	Serving Size
+    <input type="text" id="ServingSizeOutput" size="2">
+    </div>
+    <br><input type="checkbox" name=list value="1"><input type="text" id="Food1Output" maxlength="4" size="2">Red Peppers<br>
+    <input type="checkbox" name=list value="2"><input type="text" id="Food2Output" maxlength="4" size="2">Zucchini<br>
+    <input type="checkbox" name=list value="3"><input type="text" id="Food3Output" maxlength="4" size="2">Summer Squash<br>
+    <input type="checkbox" name=list value="4"><input type="text" id="Food4Output" maxlength="4" size="2">Mushrooms, halved<br>
+    <input type="checkbox" name=list value="5"><input type="text" id="Food5Output" maxlength="4" size="2">Yellow Onion<br>
+    <input type="checkbox" name=list value="6"><input type="text" id="Food6Output" maxlength="4" size="2">Cup Olive Oil<br>
+    <input type="checkbox" name=list value="7"><input type="text" id="Food7Output" maxlength="4" size="2">Salt<br>
+    <input type="checkbox" name=list value="8"><input type="text" id="Food8Output" maxlength="4" size="2">Pepper<br>
+ <input type="checkbox" name=list value="9"><input type="text" id="Food9Output" maxlength="4" size="2">Pounds Penne Pasta<br>
+ <input type="checkbox" name=list value="10"><input type="text" id="Food10Output" maxlength="4" size="2">Cups Marinara Sauce<br> 
+ <input type="checkbox" name=list value="11"><input type="text" id="Food11Output" maxlength="4" size="2">Cup Mozzarella<br>
+ <input type="checkbox" name=list value="12"><input type="text" id="Food12Output" maxlength="4" size="2">Tbs Butter<br>  
+    <input type=button value="Check All" onClick="this.value=check(this.form.list)"> <input type="button" value="Add To Shopping List">
+    
+</form>
+		</div>
+        </div>
+
+		<div class="sixteen columns">
+			<div class="footer">
+            <img src="images/SocialMedia.png" width="20%" alt="Social Media Logo" title="Social Media Logo">
+            <p>ALL RIGHTS RESERVED Copyright 2013 RecipeMe.com</p>
+            </div>
+		</div>
+
+
+	</div><!-- container -->
+
+</body>
+</html>
